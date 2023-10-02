@@ -1,0 +1,139 @@
+.profile-picture {
+    border-radius: 50%; /* Creates a circular effect */
+    width: 150px; /* Adjust the width as needed */
+height: 150px; /* Adjust the height as needed */ }
+	
+.blog-image {
+    float: left; /* Float the image to the left */
+    margin-right: 15px; /* Add some margin to separate it from text */
+}
+
+/* Clear the float after the image to prevent layout issues */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*.main-content {
+    float: left;
+    width: 70%; /* Adjust the width as needed */
+	/*margin-right: 20px; 
+        }
+.main-content p {
+            clear: both;
+			*/
+/* CSS for the sidebar */ }
+
+/*.sidebar {
+    float: right;
+    width: 80%; /* Adjust the width as needed */
+   /* background-color: #f2f2f2; /* Optional: Add a background color */
+    /*padding: 20px; /* Optional: Add padding for spacing */
+     /*   }            
+
+  /* Style for sections within the sidebar */
+/*.sidebar section {
+    margin-bottom: 20px; /* Add space between sections */
+      /*  }*/
+	
+
+body {
+    font-size: 18px; /* Set the default font size */
+	color: #2D3748; /* Set the default text color */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; /* Set the default font family */
+        }
+
+/* CSS Grid container for the layout */
+.grid-container {
+    display: grid;
+	grid-template-columns: 3fr 1fr; /* Define two columns: 1 part for sidebar, 3 parts for main content */
+    grid-template-rows: auto auto auto; /* Define three rows for header, main content, and footer */
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-gap: 20px; /* Add spacing between grid items */
+        }
+
+ /* Header styles */
+.header {
+    grid-area: header;
+    background-color: #63B3ED; /* Set the background color */
+    color: #FFFFFF; /* Set the text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding to all sides */
+    text-align: center;
+        }
+
+ /* Header image styles */
+.header img {
+    width: 100px; /* Adjust the image width as needed */
+    height: 100px; /* Adjust the image height as needed */
+    border-radius: 50%; /* Create a circular image */
+        }
+
+/* Style for h1 heading in the header */
+.header h1 {
+    font-size: 36px; /* Set font size */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Set font family */
+        }
+
+/* Sidebar styles */
+.sidebar {
+    grid-area: aside;
+    background-color: #f2f2f2; /* Optional: Add a background color */
+    padding: 10px; /* Add padding to all sides */
+        }        
+
+/* Style for headings in the sidebar */
+.sidebar h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Set font family */
+    padding: 10px 0; /* Add padding to top and bottom */
+        }
+
+/* Style for About section in the sidebar */
+.sidebar .about {
+    background-color: #E2E8F0; /* Set background color */
+	padding: 10px; /* Add padding to all sides */
+        }
+
+/* Style for Social Media and Archive links */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+        }
+
+.sidebar ul li a {
+    color: #4299E1; /* Set text color for links */
+    text-decoration: none;
+        }
+
+/* Main content styles */
+.main-content {
+    grid-area: main;
+        }
+
+/* Style for blog post titles */
+.main-content h2 {
+    font-size: 32px; /* Set font size */
+    color: #48BB78; /* Set text color */
+        }
+
+/* Style for Date and Author of the blog post */
+.main-content .post-info {
+    color: #718096; /* Set text color */
+        }
+
+/* Footer styles */
+.footer {
+    grid-area: footer;
+    background-color: #2C5282; /* Set background color */
+    color: #FFFFFF; /* Set text color */
+    padding: 10px; /* Add padding to all sides */
+    text-align: center; 
+	width: 133%
+}
